@@ -264,7 +264,7 @@ function convertPesos(){
     if(moneda===1||moneda===2||moneda===3){
     importe=parseFloat(prompt("Ingrese monto a convertir"));
     
-    while(importe<0||isNaN(importe)){
+    while(importe<=0||isNaN(importe)){
         importe=parseFloat(prompt("Ingrese monto valido a convertir"));
     }
     }
@@ -321,4 +321,4 @@ function sumarConversiones(pesos){
     return alert("El total en pesos es : $"+total);
     
 }
-sumarConversiones();
+sumarConversiones(); 
